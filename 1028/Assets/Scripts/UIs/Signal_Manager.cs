@@ -9,4 +9,9 @@ public class Signal_Manager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void To1F()
+    {
+        SceneManager.LoadScene("1F");
+    }
 }
