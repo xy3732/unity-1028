@@ -28,12 +28,12 @@ MonoBehaviour:
   separator:
     enabled: 1
     startString: '-'
-    color: {r: 0.359572, g: 0.4528302, b: 0.26272696, a: 1}
+    color: {r: 0.62551695, g: 0.764151, b: 0.3135903, a: 0.3529412}
   tree:
     enabled: 1
     drawOverlayOnColoredPrefabs: 1
     dividerHeigth: 1
-    baseLevelColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+    baseLevelColor: {r: 0.495283, g: 1, b: 0.8424795, a: 1}
     branches:
     - overlayColor: {r: 1, g: 0.2594937, b: 0, a: 0.039215688}
       colors:
