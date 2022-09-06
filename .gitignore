@@ -48,6 +48,7 @@ ExportedObj/
 *.VC.db
 *.vcxproj
 *.vcxproj.filters
+*.log
 
 # Unity3D generated meta files
 *.pidb.meta
