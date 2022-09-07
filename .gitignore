@@ -46,9 +46,6 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
-*.vcxproj
-*.vcxproj.filters
-*.log
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -63,9 +60,6 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
-/.vsconfig
-/Logs
-/UserSettings
 
 # Crashlytics generated file
 crashlytics-build.properties
