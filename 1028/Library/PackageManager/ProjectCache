@@ -5,7 +5,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
+      ticks: 637980596213239650
+=======
       ticks: 637981609042619978
+>>>>>>> Stashed changes
     m_Hash: 1321218654
   m_LockFileStatus:
     m_FilePath: C:/Users/kimjh741963/Desktop/Git_Soluna/unity-1028/1028/Packages/packages-lock.json
@@ -13,7 +17,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
+      ticks: 637980596213239650
+=======
       ticks: 637981609042629947
+>>>>>>> Stashed changes
     m_Hash: 889733690
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
