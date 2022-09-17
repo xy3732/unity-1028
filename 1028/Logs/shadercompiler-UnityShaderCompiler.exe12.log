@@ -2,8 +2,3 @@ Base path: 'C:/Program Files/2020.3.17f1/Editor/Data', plugins path 'C:/Program 
 Cmd: initializeCompiler
 
 Cmd: shutdown
-<<<<<<< Updated upstream
-
-Quitting shader compiler process
-=======
->>>>>>> Stashed changes
