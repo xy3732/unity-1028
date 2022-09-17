@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - EventTriger
+  - Elevator
+  - Item_Obj
   layers:
   - Default
   - TransparentFX
