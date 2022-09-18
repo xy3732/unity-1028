@@ -1828,6 +1828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1178286006}
+  - component: {fileID: 1178286007}
   m_Layer: 0
   m_Name: Lozic
   m_TagString: Untagged
@@ -1849,6 +1850,20 @@ Transform:
   m_Father: {fileID: 216594257}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1178286007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178286005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce41fc84a024534289fe746f81944ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_leftbutton: {fileID: 2100000, guid: 176714d0a9753be45b5c4c012a3c1ec8, type: 2}
+  m_rightbutton: {fileID: 2100000, guid: a491583fd9a9104498bc31d8f9c13525, type: 2}
 --- !u!1 &1221881934 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2463706537061040287, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
@@ -3236,7 +3251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5024862432714577673, guid: e92593347b2408d44984038e12e5a4e8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0000050068
+      value: 0.000005722046
       objectReference: {fileID: 0}
     - target: {fileID: 5024862432714577673, guid: e92593347b2408d44984038e12e5a4e8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4035,6 +4050,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -7493483729511010753, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
+      propertyPath: m_Name
+      value: Object053_ButtonObj
+      objectReference: {fileID: 0}
+    - target: {fileID: -7493483729511010753, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -4054,6 +4073,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -6108000765761270229, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 176714d0a9753be45b5c4c012a3c1ec8, type: 2}
+    - target: {fileID: -5931362203202305746, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
+      propertyPath: m_Name
+      value: Cylinder037_ButtonObj
+      objectReference: {fileID: 0}
     - target: {fileID: -5931362203202305746, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -4069,6 +4096,10 @@ PrefabInstance:
     - target: {fileID: -4652724345188999818, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4467801810950318659, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
+      propertyPath: m_Name
+      value: Object052_ButtonObj
       objectReference: {fileID: 0}
     - target: {fileID: -4467801810950318659, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
       propertyPath: m_Layer
@@ -4186,6 +4217,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3634245608725932613, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a491583fd9a9104498bc31d8f9c13525, type: 2}
     - target: {fileID: 3764337995928963850, guid: efd51e5bd84bf77419a1f196d62adc6f, type: 3}
       propertyPath: m_Layer
       value: 6
