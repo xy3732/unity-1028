@@ -9,11 +9,15 @@ public class ObjectEventTriger : MonoBehaviour
     public GameObject TrigerAbleUI;
 
     GameManager gameManager;
-    EvenetSelection eventSelection;
+    EventStatus eventSelection;
+    TextManager textmanager;
+
+    int talkindex;
 
     private void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        textmanager = GameObject.Find("TextManager").GetComponent<TextManager>();
     }
 
     private void Start()
@@ -56,12 +60,46 @@ public class ObjectEventTriger : MonoBehaviour
         if (gameManager.isDelayOn == true) return;
 
         //현재 충돌한 오브젝트의 이벤트 타입을 가져옵니다.
-        eventSelection = other.gameObject.GetComponent<EvenetSelection>();
+        eventSelection = other.gameObject.GetComponent<EventStatus>();
 
+        GetText(eventSelection.ID, eventSelection.isCharaTalk);
         //여러번 클릭하는걸 막기 위해서 딜레이 주기 [1.5초]
-       StartCoroutine(gameManager.DelayTimer(1.5f));
+        StartCoroutine(gameManager.DelayTimer(1.5f));
 
         Debug.Log("check");
+    }
+
+    void GetText(int id, bool isCharaTalk)
+    {
+        Debug.Log(id);
+        string textData = textmanager.GetTalk(id, talkindex);
+
+        if (textData == null)
+        {
+            textmanager.isText = false;
+            talkindex = 0;
+            textmanager.TalkCon();
+            return;
+        }
+
+        if (isCharaTalk)
+        {
+            textmanager.DescText.text = textData.Split(':')[0];
+            textmanager.CharaFace_Img.sprite = textmanager.GetPortrait(id, int.Parse(textData.Split(':')[1]));
+
+            textmanager.CharaFace_Img.color = new Color32(255, 255, 255, 255);
+        }
+        else
+        {
+            textmanager.DescText.text = textData;
+
+            textmanager.CharaFace_Img.color = new Color32(255, 255, 255, 0);
+        }
+
+        textmanager.isText = true;
+        talkindex++;
+
+        textmanager.TalkCon();
     }
 }
 
